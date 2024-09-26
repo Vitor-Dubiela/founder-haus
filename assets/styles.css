@@ -1,0 +1,855 @@
+/* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+/* CSS Variables */
+:root {
+    --bg-color: #FDF6E9;
+    --bg-nested-carousel-counter: rgb(22, 21, 23, 60%);
+    --button-color: #FF7F50;
+    --button-border-color: #C66643;
+    --event-border-color: #D4CFC5;
+    --text-color-orange: #E97318;
+    --text-color-title: #595959;
+    --text-color: #000000;
+    --subtitle-color: #7D7D7D;
+    --footer-bg-color: #262626;
+    --footer-bg-color2: #212121;
+    --footer-text-color: #96938E;
+    --font-family: 'Manrope', sans-serif;
+    --font-family-2nd: 'Sora', sans-serif;
+    --font-size-base: 10px;
+    --font-size-medium: 3.2rem;
+    --font-size-medium-lg: 5rem;
+    --font-size-lg: 1.8rem;
+    --font-size-xlg: 2.4rem;
+    --font-size-xxlg: 4rem;
+    --font-size-xxxlg: 6.4rem;
+    --font-size-largest: 8rem;
+    --font-size-sm: 0.875rem;
+    --line-height: 1.5;
+    --container-padding: 1.6rem;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: var(--font-size-base);
+}
+
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    color: var(--text-color);
+    line-height: var(--line-height);
+    background-color: var(--bg-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--dark-color);
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Section Styling */
+.section {
+    padding: 10rem 16rem;
+}
+
+.section h1, .section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.section p {
+    font-size: var(--font-size-lg);
+}
+
+/* Navbar */
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    max-height: 12.8rem;
+    padding: .8rem 4rem;
+    width: 100%;
+}
+
+.navbar_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.navbar_links-container {
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.navbar_links-ul {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    list-style-type: none;
+}
+
+.navbar_links-li a {
+    color: var(--text-color);
+    font-family: var(--font-family-2nd);
+    font-size: var(--font-size-lg);
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.navbar_links-li:first-of-type a {
+    text-transform: uppercase;
+}
+
+.navbar_links-li:nth-of-type(2) a {
+    background-color: var(--button-color);
+    border: 1px solid var(--button-border-color);
+    border-radius: 1.2rem;
+    box-shadow: inset 0 4px 10px rgba(245, 225, 201, 0.3),   /* Inner shadow at the top */
+                0 2px 2px rgba(0, 0, 0, 0.2);      /* Outer shadow at the bottom */
+    color: var(--bg-color);
+    padding: 1.2rem 2.8rem;
+}
+
+/* Section 1: Home */
+.section_one {
+    width: 100%;
+}
+
+.section_one-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Section 2: About */
+.section_two {
+    padding: 10rem 16rem 4rem 16rem;
+    width: 100%;
+}
+
+.section_two-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    justify-content: center;
+}
+
+.section_two-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    justify-content: center;
+}
+
+.section_two-text h2 {
+    color: var(--text-color);
+    font-size: var(--font-size-largest);
+    font-weight: 500;
+    margin: 0;
+}
+
+.section_two-text p {
+    color: var(--subtitle-color);
+    font-size: var(--font-size-medium);
+    font-weight: 300;
+    margin: 0;
+    text-align: center;
+}
+
+.section_two-door-container {
+    align-items: center;
+    border-radius: 100%;
+    background: linear-gradient(
+        180deg, 
+        var(--button-color) 20%, 
+        var(--bg-color) 90%, 
+        var(--bg-color)) 15%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    height: 120rem;
+    overflow: hidden;
+    padding-top: 30%;
+    position: relative;
+    width: 120rem;
+}
+
+.section_two-door-container h2 {
+    color: var(--bg-color);
+    font-family: var(--font-family-2nd);
+    font-size: var(--font-size-medium-lg);
+    font-weight: 300;
+}
+
+.section_two-door-container button {
+    background-color: var(--button-color);
+    border: 1px solid var(--button-border-color);
+    border-radius: 1.2rem;
+    box-shadow: inset 0 4px 10px rgba(245, 225, 201, 0.3),   /* Inner shadow at the top */
+                0 2px 2px rgba(0, 0, 0, 0.2);      /* Outer shadow at the bottom */
+    color: var(--bg-color);
+    font-size: var(--font-size-xlg);
+    padding: 1.2rem 2.8rem;
+}
+
+.section_two-door {
+    align-items: center;
+    background-color: var(--bg-color);
+    border-radius: 6rem;
+    bottom: 0;
+    display: flex;
+    height: 56rem;
+    padding-left: 4rem;
+    position: absolute;
+    transition: transform 0.8s ease-in-out, width 0.5s ease-in-out, height 0.5s ease-in-out; /* Smooth transition for all states */
+    transform: translateY(100%); /* Initially off the screen */
+    width: 48rem;
+}
+
+.section_two-door.open {
+    transform: translateY(0); /* Slide up */
+}
+
+.section_two-door.expanded {
+    height: 150%; /* Increase height */
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out; /* Smooth transition for size change */
+    width: 150%; /* Increase width */
+    z-index: 1000;
+}
+
+.section_two-door div {
+    background-color: var(--button-color);
+    border-radius: 100%;
+    height: 4rem;
+    width: 4rem;
+}
+
+/* Popup styling */
+.popup {
+    align-items: center;
+    background-color: #FDF6E9;
+    display: none; /* Hidden by default */
+    height: 100vh;
+    justify-content: center;
+    left: 0;
+    opacity: 0; /* Start invisible */
+    position: fixed;
+    top: 0;
+    transition: opacity 0.6s ease-in-out; /* Fade in/out transition */
+    width: 100vw;
+    z-index: 2000;
+}
+
+/* Popup open state (fading in) */
+.popup.open {
+    display: flex; /* Ensure it's visible */
+    opacity: 1; /* Fully visible */
+}
+
+/* Popup closing state (fading out) */
+.popup.close {
+    opacity: 0; /* Fade out */
+}
+
+/* Popup content */
+.popup-content h2 {
+    color: var(--text-color);
+    font-size: var(--font-size-largest);
+}
+
+/* Close button styling */
+.close-popup-btn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+}
+
+/* Popup content styling */
+.popup-content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    height: 100%;
+    justify-content: space-between;
+    position: relative;
+}
+
+.popup-content.red-background {
+    background: url('/assets/imgs/2nd-carousel-1.png');
+    transition: background 0.3s ease;
+}
+
+/* Ensure text is visible on red background */
+.popup-content.red-background * {
+    color: white;
+}
+
+/* Carousel styling */
+.carousel-container {
+    overflow: hidden;
+    padding-top: 6rem;
+    position: relative;
+    width: 80%;
+}
+
+/* Fullscreen carousel for the third slide */
+.carousel-container.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999; /* Ensure it stays above other content */
+}
+
+/* Position the counter at the bottom */
+.carousel-counter.bottom {
+    position: fixed;
+    bottom: 6rem; /* Adjust as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000; /* Above everything else */
+}
+
+.carousel {
+    display: flex;
+    max-height: 100%;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-page {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-height: 100%;
+    min-width: 100%;
+    position: relative; /* Add this */
+}
+
+.nested_carousel {
+    align-items: center;
+    background: var(--bg-nested-carousel-counter);
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 5.2rem;
+    height: 9.2rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 1.6rem 5.2rem;
+}
+
+.nested_carousel .nested-item {
+    align-items: center;
+    color: var(--bg-color);
+    cursor: pointer;
+    display: flex;
+    font-size: var(--font-size-xxlg);
+    font-weight: 400;
+    height: auto;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.8s ease;
+    white-space: nowrap;
+    width: auto;
+}
+
+.nested_carousel .nested-item:not(.active) {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+    color: transparent;
+    font-size: 0;
+}
+
+.nested_carousel .nested-item.active {
+    color: var(--bg-color);
+    font-size: var(--font-size-xxlg);
+    background-color: transparent;
+}
+
+.nested_carousel li {
+    color: var(--bg-color);
+    font-size: var(--font-size-xxlg);
+    font-weight: 400;
+}
+
+.carousel-page:nth-child(3) img {
+    /* Adjust as needed. Remove this if you want to hide the image completely */
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: contain;
+}
+
+.carousel-page img {
+    height: auto;
+    max-height: 100%;
+    max-width: 90%;
+    width: 100%;
+}
+
+#image1 video {
+    border-radius: 2rem;
+    max-height: 100%;
+    max-width: 50%;
+}
+
+@media screen and (min-width: 1080px) {
+    #image1 video {
+        max-width: 45%;
+    }
+}
+
+@media screen and (min-width: 1180px) {
+    #image1 video {
+        max-width: 40%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    #image1 video {
+        max-width: 32%;
+    }
+}
+
+#image2 {
+    flex-direction: column;
+    gap: 6rem;
+}
+
+#image2 h2 {
+    color: var(--text-color-orange);
+    font-size: var(--font-size-xxlg);
+}
+
+#image4 {
+    flex-direction: column;
+    gap: 6rem;
+}
+
+#image4 h2 {
+    color: var(--text-color-orange);
+    font-size: var(--font-size-xxlg);
+}
+
+#image4 div {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Page counter styling */
+.carousel-counter {
+    align-items: end;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+    min-height: 3rem;
+    padding-bottom: 6rem;
+}
+
+.counter-btn {
+    background-color: var(--button-color);
+    border-radius: 1.2rem;
+    color: var(--bg-color);
+    cursor: pointer;
+    height: 1.6rem;
+    padding: 0.5rem 1rem;
+    transition: transform 0.8s ease-in-out, height 0.5s ease-in-out;
+    width: 5.6rem;
+}
+
+.counter-btn.active {
+    height: 3.6rem;
+}
+
+/* Nested Carousel Styles */
+.nested-carousel-container {
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    position: relative;
+}
+
+.nested-carousel {
+    display: flex;
+    min-height: 100vh;
+    transition: transform 0.5s ease-in-out;
+}
+
+.nested-carousel-page {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nested-carousel-page img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nested-carousel-counter {
+    background-color: var(--bg-nested-carousel-counter);
+    bottom: 50%;
+    border-radius: 2rem;
+    display: flex;
+    gap: 5.2rem;
+    justify-content: center;
+    padding: 1.6rem 5.2rem;
+    position: absolute;
+    right: 32vw;
+}
+
+@media screen and (min-width:1280px) {
+    .nested-carousel-counter {
+        right: 35vw;
+    }
+}
+
+@media screen and (min-width:1360px) {
+    .nested-carousel-counter {
+        right: 37vw;
+    }
+}
+
+.nested-counter-btn {
+    align-items: center;
+    background-color: var(--bg-color);
+    border-radius: 1.2rem;
+    color: var(--bg-color);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 1rem;
+    /* margin: 0 0.5rem; */
+    position: relative;
+    transition: transform 0.4s ease-in-out; /* Smooth transition for all changes */
+}
+
+/* When the button is selected, we can change its size or color smoothly */
+.nested-counter-btn.active {
+    font-size: 1.2rem; /* Example: Increase font size */
+    color: var(--bg-color); /* Change text color */
+}
+
+
+.nested-counter-btn::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: var(--text-color);
+    font-size: 0.8rem;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.nested-counter-btn.active::after {
+    opacity: 1;
+}
+
+#nestedImage1 {
+    background: url('/assets/imgs/2nd-carousel-1.png');
+    background-size: cover;
+    padding: 16rem 16rem;
+    width: 100%;
+}
+
+#nestedImage2 {
+    background: url('/assets/imgs/2nd-carousel-2.png');
+    background-size: cover;
+    padding: 16rem 16rem;
+    width: 100%;
+}
+
+#nestedImage3 {
+    background: url('/assets/imgs/2nd-carousel-3.png');
+    background-size: cover;
+    padding: 16rem 16rem;
+    width: 100%;
+}
+
+#nestedImage4 {
+    background: url('/assets/imgs/2nd-carousel-4.png');
+    background-size: cover;
+    padding: 16rem 16rem;
+    width: 100%;
+}
+
+.popup-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-left {
+    transform: translateX(-100%);
+}
+
+.slide-right {
+    transform: translateX(100%);
+}
+
+/* Section 3: Services */
+.section_three {
+    background: url(/assets/imgs/section-3-bg.png) no-repeat center center;
+    background-size: cover;
+    padding: 16rem 16rem;
+    width: 100%;
+    min-height: 100vh; /* Ensures the section takes up the full viewport height */
+}
+
+.section_three-container {
+    align-items: center;
+    backdrop-filter: blur(0px);
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    gap: 12rem;
+    justify-content: center;
+    z-index: 1;
+}
+
+.section_three-text {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_three-text h2 {
+    font-size: var(--font-size-xxxlg);
+    font-weight: 500;
+}
+
+.section_three-text p {
+    font-size: var(--font-size-medium);
+    font-weight: 300;
+    margin-bottom: 5rem;
+}
+
+.section_three-line {
+    background-color: white;
+    height: 20rem;
+    width: 0.1rem;
+}
+
+.section_three-cards {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 16rem;
+    justify-content: center;
+} 
+
+.section_three-card-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    justify-content: center;
+}
+
+.section_three-card-container img {
+    height: 5rem;
+}
+
+.section_three-card-container p {
+    font-size: var(--font-size-medium);
+    font-weight: 300;
+}
+
+/* Section 4: Contact */
+.section_four {
+    background: url(/assets/imgs/section-4-bottom.png) no-repeat bottom;
+    background-size: contain; /* or 'auto' to keep the original size */
+    width: 100%;
+}
+
+.section_four-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    justify-content: center;
+    margin-bottom: 44rem;
+}
+
+.section_four-text  {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section_four-text h2 {
+    color: var(--text-color-title);
+    font-size: var(--font-size-largest);
+    font-weight: 600;
+}
+
+.section_four-text p {
+    color: var(--text-color-orange);
+    font-size: var(--font-size-xxlg);
+    font-weight: 500;
+}
+
+.section_four-events-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    min-width: 80rem;
+    width: 70%;
+}
+
+.section_four-event {
+    align-items: center;
+    border: 1px solid var(--event-border-color);
+    border-radius: 1.6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 80rem;
+    padding: 2rem 1.6rem;
+}
+
+.section_four-event-text {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 4.8rem;
+    justify-content: start;
+    margin: 0;
+}
+
+.section_four-event-date {
+    color: var(--text-color);
+    font-size: var(--font-size-xlg);
+    font-weight: 600;
+}
+
+.section_four-event-location {
+    color: var(--text-color);
+    font-size: var(--font-size-xlg);
+    font-weight: 600;
+}
+
+.section_four-button {
+    align-items: center;
+    background-color: var(--button-color);
+    border: 1px solid var(--button-border-color);
+    border-radius: 1.2rem;
+    box-shadow: inset 0 4px 10px rgba(245, 225, 201, 0.3),   /* Inner shadow at the top */
+                0 2px 2px rgba(0, 0, 0, 0.2);      /* Outer shadow at the bottom */
+    color: var(--bg-color);
+    display: flex;
+    font-family: var(--font-family-2nd);
+    font-size: var(--font-size-lg);
+    font-weight: 300;
+    justify-content: center;
+    margin: 0;
+    max-height: 4.2rem;
+    padding: 1.2rem 2rem;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.footer_container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 6rem;
+}
+
+.footer_texts {
+    align-items: start;
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+}
+
+.footer_text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.footer_text-h3 {
+    font-size: var(--font-size-xlg);
+    font-weight: 600;
+}
+
+.footer_text-ul {
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    justify-content: start;
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer_text-li a {
+    color: var(--bg-color);
+    font-size: var(--font-size-lg);
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.footer_ending {
+    align-items: center;
+    background-color: var(--footer-bg-color2);
+    display: flex;
+    justify-content: center;
+    padding: 1.6rem 0;
+}
+
+.footer_ending p {
+    color: var(--footer-text-color);
+    margin: 0;
+}

@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a class="navbar_logo" href="#">
+                <img class="navbar_logo-img" src="/assets/imgs/founder-haus.png" alt="Logo" style="max-width: 100%; height: auto;">
+            </a>
+            <div class="navbar_links-container" id="navbarNav">
+                <ul class="navbar_links-ul">
+                    <li class="navbar_links-li">
+                        <a class="navbar_links-link" href="#section1">Manifesto</a>
+                    </li>
+                    <li class="navbar_links-li">
+                        <a class="navbar_links-link" href="https://wa.me/5541997222917" target="_blank">Join Club</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 1: Home -->
+    <section id="section1" class="section section_one">
+        <div class="section_one-container">
+            <img class="section_one-text" src="/assets/imgs/homepage.png" alt="The Healthy Founder" style="max-width: 100%; height: auto;">
+        </div>
+    </section>
+
+    <!-- Section 2: About -->
+    <section id="section2" class="section section_two">
+        <div class="section_two-container">
+            <div class="section_two-text">
+                <h2>What is Founder Haus?</h2>
+                <p>
+                    Founder Haus serves as the heart for human resilience <br>
+                    and longevity for the new generation of global entrepreneurs.
+                </p>
+            </div>
+
+            <div class="section_two-door-container">
+                <h2>A home always open for the Sun and you.</h2>
+                <button id="open-door-btn">
+                    Open the door
+                </button>
+
+                <div class="section_two-door" id="sectionTwoDoor">
+                    <div id="doorLatch"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <button id="close-popup-btn" class="close-popup-btn">X</button>
+
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-page" id="image1">
+                            <video 
+                                id="popupVideo" 
+                                width="100%" 
+                                controls
+                            >
+                                <source src="/assets/video/founder-haus-video.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="carousel-page" id="image2">
+                            <h2>Jurerê, Florianónopolis</h2>
+                            <img src="/assets/imgs/carousel-2.png" alt="Image 2">
+                        </div>
+                        <div class="carousel-page" id="image3">
+                            <ul class="nested_carousel">
+                                <li class="nested-item active" data-index="0">Meetups</li>
+                                <li class="nested-item" data-index="1">Acceleration</li>
+                                <li class="nested-item" data-index="2">Health</li>
+                                <li class="nested-item" data-index="3">Immersions</li>
+                            </ul>
+                        </div>
+                        <div class="carousel-page" id="image4">
+                            <h2>Co-Hosts</h2>
+                            <div>
+                                <img src="/assets/imgs/section-4-jupter.png" alt="Image 4">
+                                <img src="/assets/imgs/section-4-habitasul.png" alt="Image 4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Page number counter -->
+                <div class="carousel-counter">
+                    <span class="counter-btn" data-index="0"></span>
+                    <span class="counter-btn" data-index="1"></span>
+                    <span class="counter-btn" data-index="2"></span>
+                    <span class="counter-btn" data-index="3"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: Services -->
+    <section id="section3" class="section section_three">
+        <div class="section_three-container">
+            <div class="section_three-text">
+                <h2>Don’t sacrifice your health.</h2>
+                <p>we help you to improve your health, by analyzing:</p>
+                <div class="section_three-line"></div>
+            </div>
+
+            <div class="section_three-cards">
+                <div class="section_three-card-container">
+                    <img src="/assets/imgs/bar-chart2-white.png" alt="Composition">
+                    <p>
+                        Composition
+                    </p>
+                </div>
+                
+                <div class="section_three-card-container">
+                    <img src="/assets/imgs/coffee-white.png" alt="Diet">
+                    <p>
+                        Diet
+                    </p>
+                </div>
+
+                <div class="section_three-card-container">
+                    <img src="/assets/imgs/battery-white.png" alt="Sleep health">
+                    <p>
+                        Sleep Health
+                    </p>
+                </div>
+
+                <div class="section_three-card-container">
+                    <img src="/assets/imgs/zap-white.png" alt="Cognitive health">
+                    <p>
+                        Cognitive Health
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Contact -->
+    <section id="section4" class="section section_four">
+        <div class="section_four-container">
+            <div class="section_four-text">
+                <h2>Upcoming Events</h2>
+                <p>Sympla</p>
+            </div>
+
+            <div class="section_four-events-container">
+                <div class="section_four-event">
+                    <div class="section_four-event-text">
+                        <span class="section_four-event-date">
+                            09/04/2024 - 2:35pm
+                        </span>
+    
+                        <span class="section_four-event-location">
+                            Founder's Friday
+                        </span>
+                    </div>
+                    
+                    <div class="section_four-button-container">
+                        <button class="section_four-button">
+                            Join Event
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="section_four-event">
+                    <div class="section_four-event-text">
+                        <span class="section_four-event-date">
+                            09/04/2024 - 2:35pm
+                        </span>
+    
+                        <span class="section_four-event-location">
+                            Founder's Friday
+                        </span>
+                    </div>
+                    
+                    <div class="section_four-button-container">
+                        <button class="section_four-button">
+                            Join Event
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="section_four-event">
+                    <div class="section_four-event-text">
+                        <span class="section_four-event-date">
+                            09/04/2024 - 2:35pm
+                        </span>
+    
+                        <span class="section_four-event-location">
+                            Founder's Friday
+                        </span>
+                    </div>
+                    
+                    <div class="section_four-button-container">
+                        <button class="section_four-button">
+                            Join Event
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="section_four-event">
+                    <div class="section_four-event-text">
+                        <span class="section_four-event-date">
+                            09/04/2024 - 2:35pm
+                        </span>
+    
+                        <span class="section_four-event-location">
+                            Founder's Friday
+                        </span>
+                    </div>
+                    
+                    <div class="section_four-button-container">
+                        <button class="section_four-button">
+                            Join Event
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_logo-container">
+                <a href="https://www.founderhaus.club/" target="_blank">
+                    <img class="footer_logo" src="/assets/imgs/founder-haus.png" alt="Logo" style="max-width: 100%; height: auto;">
+                </a>
+            </div>
+
+            <div class="footer_texts">
+                <div class="footer_text-container">
+                    <h3 class="footer_text-h3">Sociais</h3>
+    
+                    <ul class="footer_text-ul">
+                        <li class="footer_text-li">
+                            <a href="https://www.instagram.com/founderhaus?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a>
+                        </li>
+    
+                        <li class="footer_text-li">
+                            <a href="https://www.linkedin.com/company/founderhaus/" target="_blank">Linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer_text-container">
+                    <h3 class="footer_text-h3">Legal</h3>
+    
+                    <ul class="footer_text-ul">
+                        <li class="footer_text-li">
+                            <a href="policy" target="_blank">Private Policy</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer_text-container">
+                    <h3 class="footer_text-h3">Contact</h3>
+    
+                    <ul class="footer_text-ul">
+                        <li class="footer_text-li">
+                            <a href="https://wa.me/5548999864926" target="_blank">+55 (48) 99986-4926</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer_ending">
+            <p>&copy; 2024 Founder Haus | All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const door = document.getElementById('sectionTwoDoor');
+        const popup = document.getElementById('popup');
+        const closePopupBtn = document.getElementById('close-popup-btn');
+
+        // Function to open the popup
+        function openPopup() {
+            const popup = document.getElementById('popup');
+            const video = document.getElementById('popupVideo');
+            
+            popup.style.display = 'block'; // Assuming this is how you display the popup
+            
+            // Trigger video to play once the popup is shown
+            video.play().catch(error => {
+                console.error('Video autoplay was prevented:', error);
+            });
+        }
+
+        // Function to close the popup
+        function closePopup() {
+            const popup = document.getElementById('popup');
+            const video = document.getElementById('popupVideo');
+            
+            // Optionally, pause the video when the popup is closed
+            video.pause();
+        }
+
+        // Handle the "Open the door" button click to slide the door up
+        document.getElementById('open-door-btn').addEventListener('click', function() {
+            if (!door.classList.contains('open')) {
+                door.classList.add('open');
+            }
+        });
+
+        // Open the popup with fade-in effect
+        door.addEventListener('click', function() {
+            if (!door.classList.contains('expanded')) {
+                door.classList.add('expanded');
+                setTimeout(() => {
+                    popup.style.display = 'flex'; // Show the popup container
+                    setTimeout(() => {
+                        popup.classList.add('open'); // Start the fade-in effect
+                        popup.classList.remove('close'); // Ensure fade-out class is removed
+                        document.body.style.overflow = 'hidden'; // Disable page scrolling
+                    }, 8); // Small delay to trigger the transition
+                }, 400); // Wait for the door animation to complete
+
+                openPopup();
+            } else {
+                door.classList.remove('expanded');
+
+                closePopup();
+            }
+        });
+
+        // Close the popup with fade-out effect
+        closePopupBtn.addEventListener('click', function() {
+            popup.classList.add('close'); // Start the fade-out effect
+            popup.classList.remove('open'); // Ensure fade-in class is removed
+            document.body.style.overflow = ''; // Re-enable page scrolling
+
+            setTimeout(() => {
+                popup.style.display = 'none'; // Fully hide the popup after fading out
+                door.classList.remove('expanded'); // Collapse the door
+                currentSlide = 0; // Reset the carousel to the first page
+                updateCarousel(); // Update the carousel and counter buttons
+            }, 500); // Match the transition duration for fading out
+
+            closePopup();
+        });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const counterBtns = document.querySelectorAll('.counter-btn');
+            const popupContent = document.querySelector('.popup-content');
+            const carousel = document.querySelector('.carousel');
+            const nestedCarousel = document.querySelector('.nested_carousel');
+            const nestedItems = nestedCarousel.querySelectorAll('.nested-item');
+            let currentSlide = 0;
+            let currentNestedSlide = 0;
+
+            const backgrounds = [
+                '/assets/imgs/2nd-carousel-1.png',
+                '/assets/imgs/2nd-carousel-2.png',
+                '/assets/imgs/2nd-carousel-3.png',
+                '/assets/imgs/2nd-carousel-4.png'
+            ];
+
+            function extractDifference(currentBackground, newBackground) {
+                const regex = /2nd-carousel-(\d+)\.png/;
+                
+                const currentMatch = currentBackground.match(regex);
+                const newMatch = newBackground.match(regex);
+
+                if (currentMatch && newMatch) {
+                    return {
+                    currentValue: currentMatch[1],
+                    newValue: newMatch[1]
+                    };
+                }
+                
+                return null; // If no match is found
+            }
+
+            function updateCarousel() {
+                // Move the carousel
+                const offset = -currentSlide * 100;
+                carousel.style.transform = `translateX(${offset}%)`;
+                
+                // Update active state for counter buttons
+                counterBtns.forEach((btn, index) => {
+                    if (index === currentSlide) {
+                        btn.classList.add('active');
+                    } else {
+                        btn.classList.remove('active');
+                    }
+                });
+
+                // Check if it's the third slide and update background
+                if (currentSlide === 2) { // Index 2 is the third slide
+                    updateBackgroundWithAnimation();
+                } else {
+                    popupContent.style.backgroundImage = 'none';
+                    popupContent.style.backgroundSize = 'auto';
+                    popupContent.style.backgroundPosition = 'initial';
+                    counterBtns.forEach((btn) => btn.style.backgroundColor = "var(--button-color)");
+                    closePopup();
+                }
+            }
+
+            function updateBackgroundWithAnimation() {
+                const currentBackground = popupContent.style.backgroundImage;
+                const newBackground = `url("${backgrounds[currentNestedSlide]}")`;
+
+                const result = extractDifference(currentBackground, newBackground);
+
+                if (currentBackground !== newBackground) {
+                    const tempElement = document.createElement('div');
+                    tempElement.style.position = 'absolute';
+                    tempElement.style.top = '0';
+                    tempElement.style.left = '0';
+                    tempElement.style.width = '100%';
+                    tempElement.style.height = '100%';
+                    tempElement.style.backgroundImage = currentBackground;
+                    tempElement.style.backgroundSize = 'cover';
+                    tempElement.style.backgroundPosition = 'center';
+                    tempElement.style.transition = 'transform 0.5s ease-in-out';
+
+                    popupContent.appendChild(tempElement);
+                    popupContent.style.backgroundImage = newBackground;
+                    popupContent.style.backgroundSize = 'cover';
+                    popupContent.style.backgroundPosition = 'center';
+
+                    setTimeout(() => {
+                        if (result.currentValue > result.newValue) {
+                            tempElement.style.transform = 'translateX(100%)';
+                        } else {
+                            tempElement.style.transform = 'translateX(-100%)';
+                        }
+
+                    }, 50);
+
+                    setTimeout(() => {
+                        tempElement.remove();
+                    }, 500);
+                }
+
+                counterBtns.forEach((btn) => btn.style.backgroundColor = "var(--bg-color)");
+            }
+
+            // Handle the click event on each counter button
+            counterBtns.forEach((btn, index) => {
+                btn.addEventListener('click', function() {
+                    currentSlide = index;
+                    updateCarousel();
+                });
+            });
+
+            nestedItems.forEach((item, index) => {
+                item.addEventListener('click', function() {
+                    currentNestedSlide = index;
+
+                    // Remove 'active' class from all items
+                    nestedItems.forEach(i => i.classList.remove('active'));
+                    
+                    // Add 'active' class to the clicked item
+                    this.classList.add('active');
+
+                    updateCarousel();
+                });
+            });
+
+            // Initialize the carousel
+            updateCarousel();
+        });
+    </script>
+</body>
+</html>
